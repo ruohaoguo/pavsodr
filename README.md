@@ -34,6 +34,7 @@ cd detectron2
 pip install -e .
 
 cd ..
+cd pavsodr
 pip install -r requirements.txt
 cd mask2former/modeling/pixel_decoder/ops
 sh make.sh
