@@ -1,0 +1,2 @@
+from .transformer_decoder_sep import VideoMultiScaleMaskedTransformerDecoder_Sep
+from .transformer_decoder_rank import VideoMultiScaleMaskedTransformerDecoder_Rank

@@ -1,0 +1,1 @@
+from .transformer_decoder.transformer_decoder import VideoMultiScaleMaskedTransformerDecoder
