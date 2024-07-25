@@ -29,12 +29,13 @@ pip install -U opencv-python
 
 # under your working directory
 git clone https://github.com/ruohaoguo/pavsodr
+cd pavsodr
+
 git clone https://github.com/facebookresearch/detectron2
 cd detectron2
 pip install -e .
 
 cd ..
-cd pavsodr
 pip install -r requirements.txt
 cd mask2former/modeling/pixel_decoder/ops
 sh make.sh
@@ -47,8 +48,7 @@ pip install setuptools==59.5.0
 
 1. Download pretrained weight [model_final_3c8ec9.pkl](https://dl.fbaipublicfiles.com/maskformer/mask2former/coco/instance/maskformer2_R50_bs16_50ep/model_final_3c8ec9.pkl) and put it in ```./pre_models```.
 2. Download pretrained weight [soundnet8.pth](https://pan.baidu.com/s/1d0bKaUWoNial1j2ZZDJgWw) (code: 1234)and put it in ```./pre_models```.
-3. Download [reference_points.pt](https://pan.baidu.com/s/12zNIm7L4q1vuWn8jMzLMFQ) (code: 1234) and put it in ```./mask2former/modeling/pixel_decoder```.
-4. Download and unzip [datasets](https://pan.baidu.com/s/1qCn9fHLm1zFx4udtIivJ5g) (code: 1234) and put it in ```./datasets```.
+3. Download and unzip [datasets](https://pan.baidu.com/s/1qCn9fHLm1zFx4udtIivJ5g) (code: 1234) and put it in ```./datasets```.
 
 
 ## Training
