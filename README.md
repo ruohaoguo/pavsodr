@@ -70,20 +70,18 @@ pip install setuptools==59.5.0
 
 ## Inference & Evaluation
 
-- Download the trained model [model_pavsod.pth](https://pan.baidu.com/s/1N5yGKcXa0KDtbwatEyiM_g) (code: 1234) for PAVS10K. 
+- Download the trained model [model_pavsod.pth](https://pan.baidu.com/s/1N5yGKcXa0KDtbwatEyiM_g) (code: 1234) and put it in ```./pre_models```. 
 
 - For PAVSOD: Run the following command
 
   ```
-  cd test
-  python test_pavsod.py
+  python test/test_pavsod.py
   ```
 
 - For PAVSOR: Run the following command
 
   ```
-  cd test
-  python test_pavsor.py
+  python test/test_pavsor.py
   ```
 
 ## FAQ
