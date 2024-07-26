@@ -148,7 +148,7 @@ def load_pavsodr_json(json_file, image_root, dataset_name=None, extra_annotation
         record["annotations"] = video_objs
 
         # audio:
-        audios_path = "../../../datasets/pavsodr/audios/"
+        audios_path = "./datasets/pavsodr/audios/"
         audio_pth = audios_path + vid_dict['file_names'][0].split("/")[0] + '.wav'
         audio_ori = torchaudio.load(audio_pth)[0]
         record["audio"] = audio_ori
