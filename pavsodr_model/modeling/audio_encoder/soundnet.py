@@ -36,7 +36,7 @@ class SoundNet(nn.Module):
 
 
     def initialize_soundnet(self):
-        audio_pretrain_weights = torch.load("../../../pre_models/soundnet8.pth")
+        audio_pretrain_weights = torch.load("./pre_models/soundnet8.pth")
 
         all_params = {}
         for k, v in self.soundnet.state_dict().items():
