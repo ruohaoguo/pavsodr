@@ -46,25 +46,25 @@ def get_parser():
     parser = argparse.ArgumentParser(description="model test configs")
     parser.add_argument(
         "--config-file",
-        default="../configs/pavsodr/R50_PAVSOD.yaml",
+        default="./configs/pavsodr/R50_PAVSOD.yaml",
         metavar="FILE",
         help="path to config file",
     )
     parser.add_argument(
         "--model_input",
-        default="../output_pavsod/"
+        default="./pre_models/"
     )
     parser.add_argument(
         "--image_input",
-        default="../datasets/pavsodr/test/JPEGImages/"
+        default="./datasets/pavsodr/test/JPEGImages/"
     )
     parser.add_argument(
         "--audio_input",
-        default = "../datasets/pavsodr/audios/"
+        default = "./datasets/pavsodr/audios/"
     )
     parser.add_argument(
         "--output",
-        default="../output_pavsod/results/"
+        default="./output_pavsod/results/"
     )
     parser.add_argument(
         "--confidence_threshold",
@@ -96,7 +96,7 @@ if __name__ == "__main__":
 
     cfg = setup_cfg(args)
 
-    pths = ["model_final.pth"]
+    pths = ["model_pavsod.pth"]
 
     for f in pths:
         print(f)
@@ -197,7 +197,7 @@ if __name__ == "__main__":
                             cv2.imwrite(os.path.join(output_path, video, vid_frames_name[i]), binary_masks[i])
 
 
-        gt_dir = "../datasets/pavsodr/test/Annotations/"
+        gt_dir = "./datasets/pavsodr/test/Annotations/"
 
         threads = []
         loader = EvalDataset(output_path, gt_dir)
