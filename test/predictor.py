@@ -158,7 +158,7 @@ class VisualizationDemo(object):
                     ins.pred_ranks = torch.tensor([(10-i)/10 if i!=5 else .0 for i in pred_ranks_p])
                     ins.scores = torch.tensor([max(i) for i in pred_rank_scores_p])
 
-                    image_dir = "../datasets/pavsodr/ranking_eval_dataset/images/test/"
+                    image_dir = "./datasets/pavsodr/ranking_eval_dataset/images/test/"
                     pred_dict = {
                         "image_id": int(vid_frames_name_new[frame_idx].split(".")[-2].split("_")[-1]),
                         "file_name": image_dir + vid_frames_name_new[frame_idx],
@@ -176,7 +176,7 @@ class VisualizationDemo(object):
                     ins.pred_ranks = torch.tensor([])
                     ins.scores = torch.tensor([])
 
-                    image_dir = "../datasets/pavsodr/ranking_eval_dataset/images/test/"
+                    image_dir = "./datasets/pavsodr/ranking_eval_dataset/images/test/"
                     pred_dict = {
                         "image_id": int(vid_frames_name_new[frame_idx].split(".")[-2].split("_")[-1]),
                         "file_name": image_dir + vid_frames_name_new[frame_idx],
