@@ -685,7 +685,7 @@ class HTSAT(nn.Module):
         self.initialize_htsat()
 
     def initialize_htsat(self):
-        ckpt = torch.load("../../../pre_models/HTSAT_AudioSet_Saved_6.ckpt", map_location="cuda:0")
+        ckpt = torch.load("./pre_models/HTSAT_AudioSet_Saved_6.ckpt", map_location="cuda:0")
         new_ckpt = {}
         for k, v in ckpt["state_dict"].items():
             if k.startswith('sed_model'):
