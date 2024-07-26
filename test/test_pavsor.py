@@ -49,25 +49,25 @@ def get_parser():
     parser = argparse.ArgumentParser(description="model test configs")
     parser.add_argument(
         "--config-file",
-        default="../configs/pavsodr/R50_PAVSOR.yaml",
+        default="./configs/pavsodr/R50_PAVSOR.yaml",
         metavar="FILE",
         help="path to config file",
     )
     parser.add_argument(
         "--model_input",
-        default="../output_pavsor/"
+        default="/path/to/your/trained/model"
     )
     parser.add_argument(
         "--image_input",
-        default="../datasets/pavsodr/test/JPEGImages/"
+        default="./datasets/pavsodr/test/JPEGImages/"
     )
     parser.add_argument(
         "--audio_input",
-        default = "../datasets/pavsodr/audios/"
+        default = "./datasets/pavsodr/audios/"
     )
     parser.add_argument(
         "--output",
-        default="../output_pavsor/results/"
+        default="./output_pavsor/results/"
     )
     parser.add_argument(
         "--confidence_threshold",
@@ -244,6 +244,6 @@ if __name__ == "__main__":
         saliency_map_dir = Path(saliency_output_dir)
         saliency_map_dir.mkdir(exist_ok=True)
 
-        dataset_dir = "../datasets/pavsodr/ranking_eval_dataset/"
+        dataset_dir = "./datasets/pavsodr/ranking_eval_dataset/"
 
         _eval_sor(predictions, metadata, saliency_map_dir, saliency_output_dir, dataset_dir)
