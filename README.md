@@ -2,7 +2,7 @@
 
 Ruohao Guo, Dantong Niu, Liao Qu, Yanyu Qi, Ji Shi, Wenzhen Yue, Bowei Xing, Taiyan Chen, Xianghua Ying*
 
-[`PDF`](https://openreview.net/forum?id=0Q9zTGHOda) | [`CODE`](https://github.com/ruohaoguo/pavsodr) | [`Cite`](https://github.com/ruohaoguo/pavsodr/tree/main?tab=readme-ov-file#citation)
+[`PDF`]() | [`CODE`](https://github.com/ruohaoguo/pavsodr) | [`Cite`](https://github.com/ruohaoguo/pavsodr/tree/main?tab=readme-ov-file#citation)
 
 
 ## News
